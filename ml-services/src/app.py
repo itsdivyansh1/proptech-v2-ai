@@ -174,7 +174,7 @@ def recommend_properties():
         logger.info(f"Most common region: {most_common_region}")
 
         # For now, use the most common region since we don't have coordinates in our dataset
-        target_location = most_common_region
+        target_location = "Airoli"
         
         # Get recommendations for the target location
         region_encoded = region_encoder.transform([target_location])[0]

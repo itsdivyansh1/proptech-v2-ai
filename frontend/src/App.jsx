@@ -28,6 +28,7 @@ import AdminDashboard from "./pages/admin/AdminDashboard";
 import AdminLogin from "./pages/admin/AdminLogin";
 import React from 'react';
 import RealEstateChatbot from './components/RealEstateChatbot';
+import RecommendedPropertyDetailPage from './pages/RecommendedPropertyDetailPage';
 
 const router = createBrowserRouter([
   {
@@ -74,6 +75,14 @@ const router = createBrowserRouter([
       {
         path: "/addpost",
         element: <AddPost />,
+      },
+      {
+        path: "/property-detail",
+        element: <PropertyDetailPage />,
+      },
+      {
+        path: "/recommended-property-detail",
+        element: <RecommendedPropertyDetailPage />,
       },
     ],
   },
